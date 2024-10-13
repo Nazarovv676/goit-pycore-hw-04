@@ -21,7 +21,7 @@ def parse_record(record):
     """
     try:
         name, salaryStr = record.split(',')
-        salary = int(salaryStr)  # Convert salary to integer
+        salary = int(salaryStr)
     except (ValueError, IndexError):
         raise InvalidDataFormat(f"Invalid record format: {record.strip()}")
 
